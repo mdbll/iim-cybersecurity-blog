@@ -1,62 +1,3 @@
-// import { Button } from "@/components/ui/button"
-// import {
-//   NavigationMenu,
-//   NavigationMenuContent,
-//   NavigationMenuIndicator,
-//   NavigationMenuItem,
-//   NavigationMenuLink,
-//   NavigationMenuList,
-//   NavigationMenuTrigger,
-//   NavigationMenuViewport,
-// } from "@/components/ui/navigation-menu"
-// import {
-//   Card,
-//   CardAction,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card"
- 
-// function App() {
-//   return (
-//     <div className="">
-//       <NavigationMenu>
-//         <NavigationMenuList>
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger>Accueil</NavigationMenuTrigger>
-//             {/* <NavigationMenuContent>
-//               <NavigationMenuLink>Link</NavigationMenuLink>
-//             </NavigationMenuContent> */}
-            
-//           </NavigationMenuItem>
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
-//             {/* <NavigationMenuContent>
-//               <Card className="w-[300px]">
-//                 <CardHeader>
-//                   <CardTitle>Card Title</CardTitle>
-//                   <CardDescription>Card Description</CardDescription>
-//                 </CardHeader>
-//                 <CardContent>Content goes here</CardContent>
-//                 <CardFooter>
-//                   <Button>Action</Button>
-//                 </CardFooter>
-//               </Card>
-//             </NavigationMenuContent> */}
-//           </NavigationMenuItem>
-//           <NavigationMenuItem>
-//             <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
-//           </NavigationMenuItem>
-//         </NavigationMenuList>
-//       </NavigationMenu>
-//     </div>
-//   )
-// }
- 
-// export default App
-
 "use client"
 
 import { useState } from "react"
@@ -87,12 +28,9 @@ export default function App() {
       <main className="container mx-auto px-4 py-8">
         {currentView === "home" ? (
           <div>
-            <div className="mb-8">
+            {/* <div className="mb-8">
               <h1 className="text-4xl font-bold mb-2">Bienvenue sur le blog !</h1>
-              {/* <p className="text-muted-foreground text-lg">
-                Discover insights, tutorials, and stories from our community
-              </p> */}
-            </div>
+            </div> */}
             <BlogGrid posts={blogPosts} onArticleClick={handleArticleClick} />
           </div>
         ) : (

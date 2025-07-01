@@ -55,13 +55,18 @@ export function Article({ post, onBack }: ArticleProps) {
       <div className="prose prose-lg max-w-none">
         <p className="text-xl text-muted-foreground mb-6 leading-relaxed">{post.excerpt}</p>
 
-        <div className="space-y-6 text-foreground leading-relaxed">
+        {/* <div className="space-y-6 text-foreground leading-relaxed">
           {post.content.split("\n\n").map((paragraph, index) => (
             <p key={index} className="text-base">
               {paragraph}
             </p>
           ))}
-        </div>
+        </div> */}
+
+        <div
+          className="space-y-6 text-foreground leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
       </div>
     </article>
   )

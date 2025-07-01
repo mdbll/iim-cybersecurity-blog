@@ -18,14 +18,14 @@ export function Navigation({ onHomeClick }: NavigationProps) {
             </Button>
           </div>
 
-          <div className="hidden md:flex items-center space-x-6">
+          {/* <div className="hidden md:flex items-center space-x-6">
             <Button variant="ghost" onClick={onHomeClick}>
-              {/* <Home className="w-4 h-4 mr-2" /> */}
+              <Home className="w-4 h-4 mr-2" />
               Accueil
             </Button>
             <Button variant="ghost">A propos</Button>
             <Button variant="ghost">Contact</Button>
-          </div>
+          </div> */}
 
           <div className="flex items-center space-x-2">
             <Button variant="ghost" size="icon">

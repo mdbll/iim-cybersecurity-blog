@@ -17,7 +17,7 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
       <CardHeader className="pb-4">
         <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
           <img
-            src={post.image || "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"}
+            src={post.image}
             alt={post.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
@@ -49,8 +49,8 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
       <CardFooter className="pt-4">
         <Button
           onClick={onClick}
-          className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
-          variant="outline"
+          className="w-full"
+          variant="default"
         >
           Voir plus
           <ArrowRight className="w-4 h-4 ml-2" />
@@ -59,3 +59,5 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
     </Card>
   )
 }
+
+// bg-blue-500 text-white hover:bg-blue-600 hover:text-white transition-colors
