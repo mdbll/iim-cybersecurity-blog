@@ -12,6 +12,12 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post, onClick }: BlogCardProps) {
+  const handleClick = () => {
+    window.scrollTo({ top: 0 });
+    onClick();
+  };
+
+
   return (
     <Card className="h-full flex flex-col hover:shadow-lg transition-shadow cursor-pointer group">
       <CardHeader className="">
@@ -32,9 +38,10 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
         <h3 className="text-xl font-semibold line-clamp-2 group-hover:text-primary transition-colors">{post.title}</h3>
       </CardHeader>
 
-      <CardContent className="flex-1">
-        {/* <p className="text-muted-foreground line-clamp-3 mb-4">{post.excerpt}</p> */}
-        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+      <CardContent className="flex-1"></CardContent>
+
+      <CardFooter className="flex flex-col gap-4 pt-0">
+        <div className="flex items-center gap-4 text-sm text-muted-foreground w-full">
           <div className="flex items-center gap-1">
             <Calendar className="w-4 h-4" />
             {post.date}
@@ -44,20 +51,17 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
             {post.readTime}
           </div>
         </div>
-      </CardContent>
-
-      <CardFooter className="">
-        <Button
-          onClick={onClick}
-          className="w-full"
-          variant="default"
-        >
-          Voir plus
-          <ArrowRight className="w-4 h-4 ml-2" />
-        </Button>
+        <div className="w-full">
+          <Button
+            onClick={handleClick}
+            className="w-full"
+            variant="default"
+          >
+            Voir plus
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   )
 }
-
-// bg-blue-500 text-white hover:bg-blue-600 hover:text-white transition-colors

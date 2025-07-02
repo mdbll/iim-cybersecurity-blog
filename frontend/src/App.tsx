@@ -28,9 +28,6 @@ export default function App() {
       <main className="container mx-auto px-4 py-8">
         {currentView === "home" ? (
           <div>
-            {/* <div className="mb-8">
-              <h1 className="text-4xl font-bold mb-2">Bienvenue sur le blog !</h1>
-            </div> */}
             <BlogGrid posts={blogPosts} onArticleClick={handleArticleClick} />
           </div>
         ) : (

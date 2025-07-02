@@ -14,7 +14,7 @@ export function Navigation({ onHomeClick }: NavigationProps) {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-4">
             <Button variant="ghost" onClick={onHomeClick} className="text-xl font-bold">
-              mdbll.
+              acy.
             </Button>
           </div>
 
