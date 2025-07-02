@@ -28,11 +28,11 @@ export function Home({
     <div className="container mx-auto">
       {view === "home" ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((post) => (
+          {articles.map((article) => (
             <ArticleCard
-              key={post.id}
-              post={post}
-              onClick={() => onArticleClick(post.id)}
+              key={article.id}
+              article={article}
+              onClick={() => onArticleClick(article.id)}
             />
           ))}
         </div>

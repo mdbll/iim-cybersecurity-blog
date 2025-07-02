@@ -1,3 +1,9 @@
+export interface ChallengeCard {
+  id: number;
+  title: string;
+  difficulty: "Très Facile" | "Facile" | "Moyen" | "Difficile";
+}
+
 export interface ArticleCardTypes {
   id: number;
   title: string;
@@ -6,5 +12,5 @@ export interface ArticleCardTypes {
   readTime: string;
   tags: string[];
   image: string;
-  other?: {};
+  challenge?: ChallengeCard[];
 }

@@ -56,7 +56,49 @@ export const Article: ArticleCardTypes[] = [
     date: "Juin 30, 2025",
     readTime: "3 min",
     tags: ["Cybersécurité", "Root-ME", "Challenge"],
-    image: "/img/article/banner.png",
+    image: "/img/article/rootme_banner.png",
+    challenge: [
+      {
+        id: 1,
+        title: "HTML - Bouton désactivés",
+        difficulty: "Très Facile",
+      },
+      {
+        id: 2,
+        title: "Javascript - Authentification",
+        difficulty: "Très Facile",
+      },
+      {
+        id: 3,
+        title: "Javascript - Source",
+        difficulty: "Très Facile",
+      },
+      {
+        id: 4,
+        title: "Javascript - Authentification",
+        difficulty: "Très Facile",
+      },
+      {
+        id: 5,
+        title: "Javascript - Obfuscation 1",
+        difficulty: "Très Facile",
+      },
+      {
+        id: 6,
+        title: "Javascript - Obfuscation 2",
+        difficulty: "Très Facile",
+      },
+      {
+        id: 7,
+        title: "Javascript - Native code",
+        difficulty: "Facile",
+      },
+      {
+        id: 8,
+        title: "Javascript - Webpack",
+        difficulty: "Facile",
+      },
+    ],
   },
   {
     id: 7,
