@@ -14,7 +14,7 @@ interface BlogCardProps {
 export function BlogCard({ post, onClick }: BlogCardProps) {
   return (
     <Card className="h-full flex flex-col hover:shadow-lg transition-shadow cursor-pointer group">
-      <CardHeader className="pb-4">
+      <CardHeader className="">
         <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
           <img
             src={post.image}
@@ -33,7 +33,7 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
       </CardHeader>
 
       <CardContent className="flex-1">
-        <p className="text-muted-foreground line-clamp-3 mb-4">{post.excerpt}</p>
+        {/* <p className="text-muted-foreground line-clamp-3 mb-4">{post.excerpt}</p> */}
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-1">
             <Calendar className="w-4 h-4" />
@@ -46,7 +46,7 @@ export function BlogCard({ post, onClick }: BlogCardProps) {
         </div>
       </CardContent>
 
-      <CardFooter className="pt-4">
+      <CardFooter className="">
         <Button
           onClick={onClick}
           className="w-full"

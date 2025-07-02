@@ -20,7 +20,107 @@ export const blogPosts: BlogPost[] = [
     "author": "Billy IEA",
     "date": "Juin 30, 2025",
     "readTime": "3 min",
-    "tags": ["Cybersécurité", "Transport"],
+      "tags": ["Cybersécurité", "Transport"],
     "image": "/img/mindmap_transport.png"
   },
+  {
+    "id": 3,
+    "title": "Root-me : HTML - Bouton désactivés",
+    "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge HTML - Bouton désactivés sur Root-ME.",
+    "content": "<div className='mb-5'> <h2 className='text-2xl md:text-3xl font-bold mb-4 leading-tight'>Html - boutons désactivés</h2> <p>Dans ce challenge le formulaire est désactivé, l'objectif est de trouver un moyen d'activer le formulaire et l'utiliser.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/C1/C1A.png' alt='Html - boutons désactivés' className='mt-4 mb-4' /> </div> <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>\"Inspecter\"</strong>.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/element_inspect.png' alt='Inspecter élément' className='mt-4 mb-4' /> </div> <p>Ensuite, dans l'onglet <strong>\"Elements\"</strong> dérouler chaque élément du HTML. Vous dreviez voir le contenu du formulaire. On remarquera que la propriété <strong>\"disable\"</strong> a été mis sur <strong>l'input \"text\" et \"submit\"</strong>. Il suffira de <strong>supprimer</strong> cette propriété de chaque input.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1B.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1C.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant possible de <strong>cliquer</strong> sur le bouton <strong>\"Member access\"</strong> et de taper une <strong>valeur</strong>.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1D.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1E.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>HTMLCantStopYou</strong>. Et nous pouvons le vérifier en retournant sur le site.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1F.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> </div>",
+    "author": "Billy IEA",
+    "date": "Juin 30, 2025",
+    "readTime": "3 min",
+    "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+    "image": "/img/rootme/banner.png"
+  },
+  {
+    "id": 4,
+    "title": "Root-me : Javascript - Authentification",
+    "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge Javascript - Authentification sur Root-ME.",
+    content: `
+      <div class="mb-5">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-tight">Html - boutons désactivés</h2>
+        <p>Dans ce challenge l'objectif est de trouver un identifiant de connexion pour se connecter.</p>
+        <div class="w-full h-full flex justify-center">
+          <img src="/img/rootme/C2/C2A.png" alt="Html - boutons désactivés" class="mt-4 mb-4" />
+        </div>
+        <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>&quot;Inspecter&quot;</strong>.</p>
+        <div class="w-full h-full flex justify-center">
+          <img src="/img/rootme/element_inspect.png" alt="Inspecter élément" class="mt-4 mb-4" />
+        </div>
+        <p>Ensuite, dans l'onglet <strong>&quot;Source&quot;</strong>, dérouler <strong>&quot;challenge01.root-me.org&quot;</strong>, <strong>&quot;web-client/ch9&quot;</strong> et cliquer sur le fichier <strong>&quot;loging.js&quot;</strong>. Vous dreviez voir le code de la fonction <strong>Login</strong>. On remarquera que les valeurs sont comparé à <strong>4dm1n</strong> pour le pseudo et <strong>sh.org</strong> pour le mot de passe.</p>
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <img src="/img/rootme/C2/C2B.png" alt="DevTools Elements" class="mt-4 mb-4" />
+        </div>
+        <p>Il est maintenant possible de se connecter en utilisant les identifiants trouvé.</p>
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <img src="/img/rootme/C2/C2C.png" alt="DevTools Elements" class="mt-4 mb-4" />
+          <ArrowDown class="w-10 h-10 mr-2" />
+          <img src="/img/rootme/C2/C2D.png" alt="DevTools Elements" class="mt-4 mb-4" />
+        </div>
+        <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>sh.org</strong>.</p>
+      </div>
+    `,
+    "author": "Billy IEA",
+    "date": "Juin 30, 2025",
+    "readTime": "3 min",
+    "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+    "image": "/img/rootme/banner.png"
+  },
+  // {
+  //   "id": 5,
+  //   "title": "Root-me : HTML - Bouton désactivés",
+  //   "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge HTML - Bouton désactivés sur Root-ME.",
+  //   "content": "<div className='mb-5'> <h2 className='text-2xl md:text-3xl font-bold mb-4 leading-tight'>Html - boutons désactivés</h2> <p>Dans ce challenge le formulaire est désactivé, l'objectif est de trouver un moyen d'activer le formulaire et l'utiliser.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/C1/C1A.png' alt='Html - boutons désactivés' className='mt-4 mb-4' /> </div> <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>\"Inspecter\"</strong>.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/element_inspect.png' alt='Inspecter élément' className='mt-4 mb-4' /> </div> <p>Ensuite, dans l'onglet <strong>\"Elements\"</strong> dérouler chaque élément du HTML. Vous dreviez voir le contenu du formulaire. On remarquera que la propriété <strong>\"disable\"</strong> a été mis sur <strong>l'input \"text\" et \"submit\"</strong>. Il suffira de <strong>supprimer</strong> cette propriété de chaque input.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1B.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1C.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant possible de <strong>cliquer</strong> sur le bouton <strong>\"Member access\"</strong> et de taper une <strong>valeur</strong>.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1D.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1E.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>HTMLCantStopYou</strong>. Et nous pouvons le vérifier en retournant sur le site.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1F.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> </div>",
+  //   "author": "Billy IEA",
+  //   "date": "Juin 30, 2025",
+  //   "readTime": "3 min",
+  //   "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+  //   "image": "/img/rootme_challenge_webclient.png"
+  // },
+  // {
+  //   "id": 6,
+  //   "title": "Root-me : HTML - Bouton désactivés",
+  //   "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge HTML - Bouton désactivés sur Root-ME.",
+  //   "content": "<div className='mb-5'> <h2 className='text-2xl md:text-3xl font-bold mb-4 leading-tight'>Html - boutons désactivés</h2> <p>Dans ce challenge le formulaire est désactivé, l'objectif est de trouver un moyen d'activer le formulaire et l'utiliser.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/C1/C1A.png' alt='Html - boutons désactivés' className='mt-4 mb-4' /> </div> <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>\"Inspecter\"</strong>.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/element_inspect.png' alt='Inspecter élément' className='mt-4 mb-4' /> </div> <p>Ensuite, dans l'onglet <strong>\"Elements\"</strong> dérouler chaque élément du HTML. Vous dreviez voir le contenu du formulaire. On remarquera que la propriété <strong>\"disable\"</strong> a été mis sur <strong>l'input \"text\" et \"submit\"</strong>. Il suffira de <strong>supprimer</strong> cette propriété de chaque input.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1B.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1C.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant possible de <strong>cliquer</strong> sur le bouton <strong>\"Member access\"</strong> et de taper une <strong>valeur</strong>.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1D.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1E.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>HTMLCantStopYou</strong>. Et nous pouvons le vérifier en retournant sur le site.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1F.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> </div>",
+  //   "author": "Billy IEA",
+  //   "date": "Juin 30, 2025",
+  //   "readTime": "3 min",
+  //   "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+  //   "image": "/img/rootme_challenge_webclient.png"
+  // },
+  // {
+  //   "id": 7,
+  //   "title": "Root-me : HTML - Bouton désactivés",
+  //   "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge HTML - Bouton désactivés sur Root-ME.",
+  //   "content": "<div className='mb-5'> <h2 className='text-2xl md:text-3xl font-bold mb-4 leading-tight'>Html - boutons désactivés</h2> <p>Dans ce challenge le formulaire est désactivé, l'objectif est de trouver un moyen d'activer le formulaire et l'utiliser.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/C1/C1A.png' alt='Html - boutons désactivés' className='mt-4 mb-4' /> </div> <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>\"Inspecter\"</strong>.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/element_inspect.png' alt='Inspecter élément' className='mt-4 mb-4' /> </div> <p>Ensuite, dans l'onglet <strong>\"Elements\"</strong> dérouler chaque élément du HTML. Vous dreviez voir le contenu du formulaire. On remarquera que la propriété <strong>\"disable\"</strong> a été mis sur <strong>l'input \"text\" et \"submit\"</strong>. Il suffira de <strong>supprimer</strong> cette propriété de chaque input.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1B.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1C.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant possible de <strong>cliquer</strong> sur le bouton <strong>\"Member access\"</strong> et de taper une <strong>valeur</strong>.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1D.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1E.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>HTMLCantStopYou</strong>. Et nous pouvons le vérifier en retournant sur le site.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1F.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> </div>",
+  //   "author": "Billy IEA",
+  //   "date": "Juin 30, 2025",
+  //   "readTime": "3 min",
+  //   "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+  //   "image": "/img/rootme_challenge_webclient.png"
+  // },
+  // {
+  //   "id": 8,
+  //   "title": "Root-me : HTML - Bouton désactivés",
+  //   "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge HTML - Bouton désactivés sur Root-ME.",
+  //   "content": "<div className='mb-5'> <h2 className='text-2xl md:text-3xl font-bold mb-4 leading-tight'>Html - boutons désactivés</h2> <p>Dans ce challenge le formulaire est désactivé, l'objectif est de trouver un moyen d'activer le formulaire et l'utiliser.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/C1/C1A.png' alt='Html - boutons désactivés' className='mt-4 mb-4' /> </div> <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>\"Inspecter\"</strong>.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/element_inspect.png' alt='Inspecter élément' className='mt-4 mb-4' /> </div> <p>Ensuite, dans l'onglet <strong>\"Elements\"</strong> dérouler chaque élément du HTML. Vous dreviez voir le contenu du formulaire. On remarquera que la propriété <strong>\"disable\"</strong> a été mis sur <strong>l'input \"text\" et \"submit\"</strong>. Il suffira de <strong>supprimer</strong> cette propriété de chaque input.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1B.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1C.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant possible de <strong>cliquer</strong> sur le bouton <strong>\"Member access\"</strong> et de taper une <strong>valeur</strong>.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1D.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1E.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>HTMLCantStopYou</strong>. Et nous pouvons le vérifier en retournant sur le site.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1F.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> </div>",
+  //   "author": "Billy IEA",
+  //   "date": "Juin 30, 2025",
+  //   "readTime": "3 min",
+  //   "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+  //   "image": "/img/rootme_challenge_webclient.png"
+  // },
+  // {
+  //   "id": 9,
+  //   "title": "Root-me : HTML - Bouton désactivés",
+  //   "excerpt": "Dans cette article, nous allons voir comment réaliser le challenge HTML - Bouton désactivés sur Root-ME.",
+  //   "content": "<div className='mb-5'> <h2 className='text-2xl md:text-3xl font-bold mb-4 leading-tight'>Html - boutons désactivés</h2> <p>Dans ce challenge le formulaire est désactivé, l'objectif est de trouver un moyen d'activer le formulaire et l'utiliser.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/C1/C1A.png' alt='Html - boutons désactivés' className='mt-4 mb-4' /> </div> <p>Pour résoudre ce problème nous allons utiliser l'inspecteur d'élement. Pour y accéder faites <strong>clique-droit</strong> sur la page et cliquer sur <strong>\"Inspecter\"</strong>.</p> <div className='w-full h-full flex justify-center'> <img src='/img/rootme/element_inspect.png' alt='Inspecter élément' className='mt-4 mb-4' /> </div> <p>Ensuite, dans l'onglet <strong>\"Elements\"</strong> dérouler chaque élément du HTML. Vous dreviez voir le contenu du formulaire. On remarquera que la propriété <strong>\"disable\"</strong> a été mis sur <strong>l'input \"text\" et \"submit\"</strong>. Il suffira de <strong>supprimer</strong> cette propriété de chaque input.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1B.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1C.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant possible de <strong>cliquer</strong> sur le bouton <strong>\"Member access\"</strong> et de taper une <strong>valeur</strong>.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1D.png' alt='DevTools Elements' className='mt-4 mb-4' /> <ArrowDown className='w-10 h-10 mr-2' /> <img src='/img/rootme/C1/C1E.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> <p>Il est maintenant indiqué que le <strong>flag</strong> est <strong>HTMLCantStopYou</strong>. Et nous pouvons le vérifier en retournant sur le site.</p> <div className='w-full h-full flex flex-col justify-center items-center'> <img src='/img/rootme/C1/C1F.png' alt='DevTools Elements' className='mt-4 mb-4' /> </div> </div>",
+  //   "author": "Billy IEA",
+  //   "date": "Juin 30, 2025",
+  //   "readTime": "3 min",
+  //   "tags": ["Cybersécurité", "Root-ME", "Challenge"],
+  //   "image": "/img/rootme_challenge_webclient.png"
+  // },
 ]
