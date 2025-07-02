@@ -4,14 +4,14 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ArrowRight } from "lucide-react"
-import type { BlogPost } from "../types/blog"
+import type { ArticleCardTypes } from "../../../types/articleCard.types"
 
-interface BlogCardProps {
-  post: BlogPost
+interface ArticleCardProps {
+  post: ArticleCardTypes
   onClick: () => void
 }
 
-export function BlogCard({ post, onClick }: BlogCardProps) {
+export function ArticleCard({ post, onClick }: ArticleCardProps) {
   const handleClick = () => {
     window.scrollTo({ top: 0 });
     onClick();
