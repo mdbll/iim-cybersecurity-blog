@@ -4,6 +4,9 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "../components/ui/button";
 import type { ChallengeCard } from "../types/articleCard.types";
 import { HtmlDisabledButtonChallenge } from "./Challenges/HtmlDisabledButtonChallenge";
+import { JavascriptAuthentificationChallenge } from "./Challenges/JavascriptAuthentificationChallenge";
+import { JavascriptSourceChallenge } from "./Challenges/JavascriptSourceChallenge";
+import { JavascriptAuthentification2Challenge } from "./Challenges/JavascriptAuthentification2Challenge";
 
 interface ChallengeProps {
   challenge: ChallengeCard;
@@ -24,6 +27,18 @@ export function Challenge({ challenge, onBack }: ChallengeProps) {
 
       {challenge.id === 1 && (
         <HtmlDisabledButtonChallenge challenge={challenge} />
+      )}
+
+      {challenge.id === 2 && (
+        <JavascriptAuthentificationChallenge challenge={challenge} />
+      )}
+
+      {challenge.id === 3 && (
+        <JavascriptSourceChallenge challenge={challenge} />
+      )}
+
+      {challenge.id === 4 && (
+        <JavascriptAuthentification2Challenge challenge={challenge} />
       )}
 
       <Button onClick={onBack} variant="default" className="mb-6">

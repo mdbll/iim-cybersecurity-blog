@@ -75,7 +75,7 @@ export const Article: ArticleCardTypes[] = [
       },
       {
         id: 4,
-        title: "Javascript - Authentification",
+        title: "Javascript - Authentification 2",
         difficulty: "Très Facile",
       },
       {
