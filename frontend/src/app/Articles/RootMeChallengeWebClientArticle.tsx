@@ -14,13 +14,10 @@ interface RootMeChallengeWebClientArticleProps {
 export function RootMeChallengeWebClientArticle({
   challenges,
   view,
-  selectedArticle,
+  // selectedArticle,
   onChallengeClick,
-  onBack,
-}: RootMeChallengeWebClientArticleProps) {
-  const currentChallenge = selectedArticle
-    ? challenges.find((a) => a.id === selectedArticle)
-    : null;
+}: // onBack,
+RootMeChallengeWebClientArticleProps) {
   return (
     <>
       <p className="text-xl text-muted-foreground mb-6 leading-relaxed">

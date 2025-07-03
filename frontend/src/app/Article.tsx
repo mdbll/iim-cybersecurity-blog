@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import type { ArticleCardTypes } from "../types/articleCard.types";
 import { WannaCryArticle } from "./Articles/WannaCryArticle";
 import { Log4ShellArticle } from "./Articles/Log4ShellArticle";

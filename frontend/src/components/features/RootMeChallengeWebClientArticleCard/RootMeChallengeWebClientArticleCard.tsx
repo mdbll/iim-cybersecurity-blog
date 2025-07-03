@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { ChallengeCard } from "../../../types/articleCard.types";
 
 interface RootMeChallengeWebClientArticleCardProps {
